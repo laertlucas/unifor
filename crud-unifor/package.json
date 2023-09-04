@@ -2,12 +2,9 @@
   "name": "crud-unifor",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
-  },
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider  && gulp buildDev && ng serve ",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider  && gulp build && ng build --prod"
+   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
